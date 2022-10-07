@@ -1,0 +1,32 @@
+/* 荳｡遶ｯ謠�∴ */
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 讓ｪ荳ｦ縺ｳ�亥渕譛ｬ蠖｢�� */
+.sideBySide {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .sideBySide {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* 讓ｪ荳ｦ縺ｳ�井ｸｭ螟ｮ謠�∴�� */
+.sideBySideCenter {
+  composes: sideBySide;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sideBySideCenter {
+    text-align: left;
+  }
+}
